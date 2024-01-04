@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Lobster&display=swap" rel="stylesheet">
+        <title>Resume website</title>
+
+        <style>
+            .overall {
+                margin: 0;
+                padding: 0;
+                /*height: 3000px;*/
+                position: relative;
+
+                /*background-image: url('img/background.jpg');
+                background-size:cover;
+                background-position: center;
+                background-repeat: no-repeat;*/
+                background-color: black;
+                
+                font-family: Calibri;
+                font-weight: bold;
+                color: white;
+
+                display: flex;
+                flex-direction: row;
+                align-items: start;
+            }
+
+            .header {
+                display: flex;
+                flex-direction: column;      
+
+                position: fixed;
+
+                justify-content: center;
+                align-items: center;
+
+                top: 0px;
+                bottom: 0px;
+                left: 0px;
+
+                padding: 5px;
+
+                z-index: 100;
+            }
+
+            .info {
+                font-size: 30px;
+                color: white;
+
+                display: flex;
+                flex-direction: column;
+            }
+
+            .icon-and-name {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 10px;
+                margin-bottom: 10px;
+
+                position: relative;
+            }
+
+            .icon-name {
+                font-size: 14px;
+                color: rgb(255, 115, 115);
+                white-space: nowrap;
+                
+                background-color: rgba(0, 0, 0, 1);
+
+                position: absolute;
+                bottom: -12px;
+                right: -50px;
+
+                opacity: 0;
+                transition: opacity 0.5s;
+                pointer-events: none;
+            }
+
+            .header .icons {
+                font-size: 25px;
+                padding: 3px;
+            }
+
+            .header .icons:hover {
+                cursor: pointer;
+            }
+
+            .icon-and-name:hover .icon-name {
+                opacity: 1;
+            }
+
+            .left {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 300px;
+                height: 1600px;
+                margin-left: 45px;
+
+                /*border-right-color: yellow;
+                border-right-style: solid;
+                border-right-width: 1px;*/
+
+                row-gap: 10px;
+
+                color: white;
+
+                font-size: 20px;
+
+                background-color: rgb(1, 8, 100);
+            }
+
+            .profile-pic {
+                height: 250px;
+                width: 250px;
+                
+                border-radius: 150px;
+
+                margin: 10px;
+
+                object-fit: cover;
+            }
+
+            .name {
+                font-size: 40px;
+                padding: 5px;
+                color: white;
+            }
+            .right {
+                flex: 1;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+
+                column-gap: 10px;
+                row-gap: 10px;
+            }
+
+            .right-grid {
+                margin: 10px;
+            }
+            .right-header {
+                font-size: 30px;
+                color: white;
+                border-bottom-style: solid;
+                border-bottom-color: white;
+                border-bottom-width: 1px;
+                margin-bottom: 10px;
+                padding-bottom: 5px;
+            }
+
+            .right-subheader {
+                font-size: 20px;
+                color: turquoise;
+                margin-top: 10px;
+                margin-bottom: 5px;
+            }
+
+            .right-details {
+                font-size: 15px;
+                color: gray;
+                margin-top: 10px;
+                margin-left: 10px;
+                margin-bottom: 10px;
+            }
+        </style>
+        
+    </head>
+    <body class = "overall">
+        <div class = "header">
+            <div class = "info">
+                <div class = "icon-and-name">
+                    <ion-icon class = "icons" name="information-circle-outline"></ion-icon>
+                    <div class = "icon-name">Info</div>
+                </div>
+
+                <div class = "icon-and-name">
+                    <ion-icon class = "icons" name="book-outline"></ion-icon>
+                    <div class = "icon-name">Education</div>
+                </div>
+                
+                <div class = "icon-and-name">
+                    <ion-icon class = "icons" name="server-outline"></ion-icon>
+                    <div class = "icon-name">Projects</div>
+                </div>
+
+                <div class = "icon-and-name">
+                    <ion-icon class = "icons" name="briefcase-outline"></ion-icon>
+                    <div class = "icon-name">Work Experience</div>
+                </div>
+
+                <div class = "icon-and-name">
+                    <ion-icon class = "icons" name="basketball-outline"></ion-icon>
+                    <div class = "icon-name">Co-Curricular Activities</div>
+                </div>
+
+                <div class = "icon-and-name">
+                    <ion-icon class = "icons" name="aperture-outline"></ion-icon>
+                    <div class = "icon-name">Skills</div>
+                </div>
+            </div>
+        </div>
+            <div class = "left">
+                <img class = "profile-pic" src = "img/profile pic - Copy.jpg">
+                <div class = "name">Thng Ling Peng</div>
+                <div>+6590021055</div>
+                <div>thnglingpeng0508@gmail.com</div>
+                <div>thng0025@e.ntu.edu.sg</div>
+                <div>https://github.com/SoulMeow1</div>
+            </div>
+
+            <div class = "right">
+                
+                <div class = "right-grid">
+                    <div class = "right-header">Education </div>
+
+                    <div class = "right-subheader">Nanyang Technological University, Singapore	</div>
+                    <div class = "right-details">&#x2022; Bachelor of Engineering (Computer Science)</div>
+                    <div class = "right-details">&#x2022; Aug 2022 - Present</div>
+
+                    <div class = "right-subheader">3DSense Media School, Singapore</div>
+                    <div class = "right-details">&#x2022; Diploma in Concept Design and Illustration</div>
+                    <div class = "right-details">&#x2022; Aug 2020 - Jul 2021</div>
+
+                    <div class = "right-subheader">Temasek Polytechnic, Singapore</div>
+                    <div class = "right-details">&#x2022; Diploma in Aerospace Engineering</div>
+                    <div class = "right-details">&#x2022; Apr 2014 - Apr 2018</div>
+                </div>
+                <div class = "right-grid">
+                    <div class = "right-header">Projects done</div>
+
+                    <div class = "right-subheader">HDB prices data science project</div>
+                    <div class = "right-details">&#x2022; Utilised data visualisation tools and machine learning algorithms to investigate the impact of various features on flat pricing</div>
+                    <div class = "right-details">&#x2022; Showcased an understanding of data analysis methodologies and proficiency in utilities Jupyter Notebook, data visualisation, and machine learning techniques for real world problem solving</div>
+                    <div class = "right-details">&#x2022; Link to project: https://github.com/SoulMeow1/data-science-mini-project/blob/main/datasci%20mini%20project%20version%202.1.ipynb</div>
+                
+                    <div class = "right-subheader">Leetcode</div>
+                    <div class = "right-details">&#x2022; Successfully tackled numerous challenging problems, including several classified as 'hard,' and 'medium' difficulty level.</div>
+                    <div class = "right-details">&#x2022; Demonstrated adeptness across a spectrum of topics encompassing dynamic programming, graph theory, data structures, and algorithms.</div>
+                    <div class = "right-details">&#x2022; Link to projects: https://github.com/SoulMeow1/leetcode</div>
+                
+                    <div class = "right-subheader">Sudoku Solver</div>
+                    <div class = "right-details">&#x2022; 'Hard' Leetcode problem solved using backtracking</div>
+                    <div class = "right-details">&#x2022; Link to project: https://github.com/SoulMeow1/leetcode/blob/main/sudoku%20solver.txt</div>
+
+                </div>
+
+                <div class = "right-grid">
+                    <div class = "right-header">Work Experience</div>
+
+                    <div class = "right-subheader">Minebea Mitsumi</div>
+                    <div class = "right-details">&#x2022; Engineer</div>
+                    <div class = "right-details">&#x2022; Sep 2021 - May 2022</div>
+                    <div class = "right-details">&#x2022; Ensure customer orders with specifications are followed strictly</div>
+                    <div class = "right-details">&#x2022; Designed parts on Catia that guarantees continuous factory operations</div>
+                
+                    <div class = "right-subheader">Singapore Armed Forces</div>
+                    <div class = "right-details">&#x2022; Admin Specialist</div>
+                    <div class = "right-details">&#x2022; Feb 2019 - Apr 2020</div>
+                    <div class = "right-details">&#x2022; Did ad-hoc duties in a timely manner, and with minimal supervision</div>
+                    <div class = "right-details">&#x2022; Ensured all logistics and administrative matters for training and exercises are done properly.</div>
+                    <div class = "right-details">&#x2022; Planned and ran social events like celebrations and group cohesion for the department. </div>
+                    <div class = "right-details">&#x2022; Attained NSF of the month for excellence in my duties</div>
+                
+                    <div class = "right-subheader">ST Engineering</div>
+                    <div class = "right-details">&#x2022; Engineering Intern</div>
+                    <div class = "right-details">&#x2022; Oct 2017 - Apr 2018</div>
+                    <div class = "right-details">&#x2022; Worked closely with an engineer to make documentation on assembly instructions</div>
+
+                </div>
+
+                <div class = "right-grid">
+                    <div class = "right-header">Co-Curricular Activities</div>
+
+                    <div class = "right-subheader"> CAC Social committee</div>
+                    <div class = "right-details">&#x2022; Publicity and Publications (PnP) Chief</div>
+                    <div class = "right-details">&#x2022; Designed posters and ran events for performing arts CCA members to enjoy.</div>
+                    <div class = "right-details">&#x2022; Manage the workload of the PnP team.</div>
+                    
+                    <div class = "right-subheader">Freshman Orientation Camp</div>
+                    <div class = "right-details">&#x2022; Hosted as a Group leader, conducting ice-breaking games and showing freshmen around NTU</div>
+
+                    <div class = "right-subheader">National Police Cadet Corp </div>
+                    <div class = "right-details">&#x2022; Officer</div>
+                    <div class = "right-details">&#x2022; Jun 2014 - Jun 2016</div>
+                    <div class = "right-details">&#x2022; A voluntary position for someone with a love for teaching</div>
+                    <div class = "right-details">&#x2022; Planned and ran school camps for secondary school students</div>
+                    <div class = "right-details">&#x2022; Instructed students on various hard and soft skills.</div>
+
+                    <div class = "right-subheader">Others</div>
+                    <div class = "right-details">&#x2022; Participated in the TechFest 2023 Hackathon</div>
+                </div>
+                <div class = "right-grid">
+                    <div class = "right-header">Skills</div>
+                    <div class = "right-subheader">Programming Languages</div>
+                    <div class = "right-details">C, C++, Java, Python, HTML, CSS</div>
+
+                    <div class = "right-subheader">Languages</div>
+                    <div class = "right-details">English, conversational Chinese</div>
+
+                    <div class = "right-subheader">software skills</div>
+                    <div class = "right-details">AutoCAD, Photoshop, Microsoft Office, Maya</div>
+
+                    <div class = "right-subheader">Hobbies and Interests</div>
+                    <div class = "right-details">Illustration, Programming side projects, Visual Design</div>
+                </div>
+            </div>
+
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
